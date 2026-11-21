@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aziz Shaker — Full Stack Developer</title>
+  <meta name="description" content="Aziz Shaker — Full Stack Developer building ERP systems, Arabic-first web platforms and AI-powered products." />
+  <meta property="og:title" content="Aziz Shaker — Full Stack Developer" />
+  <meta property="og:description" content="ERP systems, Arabic-first web platforms and AI-powered products, shipped end to end." />
+  <meta property="og:image" content="assets/aziz-cut.webp" />
+  <meta name="theme-color" content="#c4262e" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Lalezar&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader"><span class="loader-mark">AS</span></div>
+  <div class="progress" id="progress"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav-logo" aria-label="Home"><img src="assets/logo.svg" alt="" width="28" height="28" /></a>
+    <nav class="nav-pill" id="navPill">
+      <span class="nav-indicator" id="navIndicator"></span>
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#works" data-i18n="nav.works">Works</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="chip-btn icon" id="themeBtn" aria-label="Toggle theme">
+        <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="chip-btn" id="langBtn" aria-label="Switch language"><span id="langLabel">AR</span><i class="flag-eg"></i></button>
+      <a class="chip-btn cv" href="assets/Aziz-Shaker-CV.pdf" download>
+        <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+        <span data-i18n="nav.cv">Download CV</span>
+      </a>
+      <button class="chip-btn icon burger" id="burger" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-i18n="nav.home">Home</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#stack" data-i18n="nav.stack">Stack</a>
+    <a href="#works" data-i18n="nav.works">Works</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <a href="assets/Aziz-Shaker-CV.pdf" download class="mm-cv" data-i18n="nav.cv">Download CV</a>
+  </div>
+
+  <!-- ===== SOCIAL RAIL ===== -->
+  <aside class="social-rail" id="socialRail"></aside>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-grain"></div>
+      <h1 class="hero-name" aria-label="Aziz Shaker">
+        <span class="hn-word" data-i18n="hero.first">Aziz</span>
+        <span class="hn-word" data-i18n="hero.last">Shaker</span>
+      </h1>
+
+      <div class="hero-grid">
+        <div class="hero-left reveal">
+          <h2 class="hero-kicker" data-i18n-html="hero.kicker">I build smart<br />business software</h2>
+          <p class="hero-status"><span class="dot"></span><span data-i18n="hero.status">Open to full-stack roles &amp; freelance projects</span></p>
+          <p class="hero-lead" data-i18n="hero.lead">ERP systems, Arabic-first web platforms and AI-powered products — designed, built and shipped end to end.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn"><span data-i18n="hero.hire">Hire Me</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6l6 6-6 6"/></svg></a>
+            <a href="#works" class="btn ghost" data-i18n="hero.work">View My Work</a>
+          </div>
+        </div>
+
+        <figure class="hero-photo" id="heroPhoto">
+          <div class="hp-ring"></div>
+          <img src="assets/aziz-cut.webp" alt="Aziz Shaker" width="567" height="689" fetchpriority="high" />
+          <div class="hp-badge hp-b1"><b>8</b><span data-i18n="hero.b1">live products</span></div>
+          <div class="hp-badge hp-b2"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.9L22 9.3l-5.6 4.6L18.2 21 12 17.1 5.8 21l1.8-7.1L2 9.3l7.4-.4z"/></svg><span data-i18n="hero.b2">AI-powered apps</span></div>
+        </figure>
+
+        <div class="hero-right reveal">
+          <h2 class="hero-kicker" data-i18n-html="hero.right">That turns<br />ideas into<br /><em>products</em>.</h2>
+        </div>
+      </div>
+
+      <div class="ribbons">
+        <div class="ribbon r1"><div class="ribbon-track" data-ribbon></div></div>
+        <div class="ribbon r2"><div class="ribbon-track reverse" data-ribbon></div></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">Who am I</span>
+          <h2 class="sec-title" data-i18n-html="about.title">A developer building<br />real business products</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="blob">
+              <img src="assets/photo.webp" alt="Aziz Shaker" loading="lazy" width="720" height="840" />
+            </div>
+            <div class="about-sticker"><span data-i18n="about.sticker">Based in Egypt</span> 🇪🇬</div>
+          </div>
+
+          <article class="about-card reveal">
+            <span class="pill-tag"><span data-i18n="about.grad">Graduating</span> <b>2028</b></span>
+            <h3 class="about-h" data-i18n-html="about.who">Who is <em>Aziz</em>?</h3>
+            <p class="about-lead" data-i18n="about.lead">A Business Information Systems student who already ships production software for real clients.</p>
+            <p data-i18n="about.p1">I'm Aziz Shaker, studying Computers &amp; Information (BIS) at Nile Higher Institute for Engineering &amp; Technology. I work with PHP/Laravel, React, Next.js and PostgreSQL, and I build AI-powered apps with Python and LLM APIs.</p>
+            <p data-i18n="about.p2">As a freelancer I've delivered ERP systems, a factory management system, a desktop POS and a real-estate company website. My portfolio includes an AI thyroid-analysis system, RAG business assistant, e-commerce stores and a course-selling platform.</p>
+            <p data-i18n="about.p3">I'm looking for a full-stack role where I can turn business problems into clean, working software.</p>
+            <div class="stats" id="stats">
+              <div class="stat"><b data-count="8">0</b><span data-i18n="stats.live">Live products</span></div>
+              <div class="stat"><b data-count="20" data-suffix="+">0</b><span data-i18n="stats.tech">Technologies</span></div>
+              <div class="stat"><b data-count="3">0</b><span data-i18n="stats.cert">Certifications</span></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="sub-title reveal" data-i18n="about.journey">My Journey</h3>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="eyebrow" data-i18n="services.eyebrow">What I offer</span>
+          <h2 class="sec-title" data-i18n="services.title">My Services</h2>
+        </header>
+        <div class="services" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section class="section" id="stack">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="eyebrow" data-i18n="stack.eyebrow">Tools I trust</span>
+          <h2 class="sec-title" data-i18n="stack.title">Tech Stack</h2>
+        </header>
+        <div class="stack-groups" id="stackGroups"></div>
+      </div>
+    </section>
+
+    <!-- ===== WORKS ===== -->
+    <section class="section" id="works">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="eyebrow"><span class="live-dot"></span><span data-i18n="works.eyebrow">Live from GitHub</span></span>
+          <h2 class="sec-title" data-i18n="works.title">My Work</h2>
+        </header>
+        <div class="filters reveal" id="filters"></div>
+        <div class="works" id="worksGrid"></div>
+        <p class="works-note reveal"><span data-i18n="works.note">Every project above is deployed and running — click any card for details.</span>
+          <a href="https://github.com/aziz-shaker" target="_blank" rel="noopener" data-i18n="works.more">See all on GitHub →</a></p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-glow"></div>
+      <div class="container contact-inner">
+        <span class="eyebrow light reveal" data-i18n="contact.eyebrow">Let's work together</span>
+        <h2 class="contact-title reveal" data-i18n-html="contact.title">Got an idea?<br /><em>Let's build it.</em></h2>
+        <p class="contact-lead reveal" data-i18n="contact.lead">Whether it's an ERP, an online store or an AI-powered tool — I reply fast.</p>
+        <div class="contact-cards reveal" id="contactCards"></div>
+      </div>
+      <div class="ribbon r3"><div class="ribbon-track" data-ribbon></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> <span data-i18n="footer.name">Aziz Shaker</span></span>
+      <span data-i18n="footer.made">Designed &amp; built by me — no templates.</span>
+      <a href="#home" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5m-6 6l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
